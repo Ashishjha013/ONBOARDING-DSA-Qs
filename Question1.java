@@ -10,12 +10,12 @@
 // Tags: #Arrays #Counting
 // ------------------------------------------------------------
 
-public class MaxConsecutiveOnes {
+public class Question1 {
 
   // WHY: Find longest sequence of 1's
   // WHAT: nums = binary array (contains only 0 and 1)
   // HOW: Track current count, update max when streak breaks
-  public int findMaxConsecutiveOnes(int[] nums) {
+  public static int findMaxConsecutiveOnes(int[] nums) {
 
     // WHY: Track the maximum streak found so far
     // WHAT: maxCount stores best result
@@ -52,6 +52,14 @@ public class MaxConsecutiveOnes {
     // WHAT: Final comparison between maxCount and Count
     // HOW: Return max of both (Count might be largest streak)
     return Math.max(maxCount, Count);
+  }
+
+  // main method for quick testing
+  public static void main(String[] args) {
+    int[] arr = { 1, 1, 0, 1, 1, 1, 0, 1 };
+
+    int maxConsecutiveOnes = findMaxConsecutiveOnes(arr);
+    System.out.println("Max Consecutive Ones: " + maxConsecutiveOnes); // Expected: 3
   }
 }
 
