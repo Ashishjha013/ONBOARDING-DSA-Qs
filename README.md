@@ -18,7 +18,7 @@ Each problem is solved with a focus on **clarity**, **patterns**, and **clean lo
 | Day | Problem | My Solution Link | Status |
 |-----|----------|------------------|---------|
 | 1 | 485. Max Consecutive Ones | [GitHub Link](https://github.com/Ashishjha013/ONBOARDING-DSA-Qs/blob/main/MaxConsecutiveOnes.java) | ✅ |
-| 2 | 1295. Find Number with Even Number of Digits | [GitHub Link]() | ✅ |
+| 2 | 1295. Find Number with Even Number of Digits | [GitHub Link](https://github.com/Ashishjha013/ONBOARDING-DSA-Qs/blob/main/Question2.java) | ✅ |
 | 3 | 724. Find Pivot Index | [GitHub Link](https://github.com/Ashishjha013/ONBOARDING-DSA-Qs/blob/main/Question3.java) | ✅ |
 | 4 | 118. Pascal’s Triangle | [GitHub Link]() | ⬜ |
 | 5 | 344. Reverse String | [GitHub Link]() | ⬜ |
@@ -45,4 +45,5 @@ Each problem is solved with a focus on **clarity**, **patterns**, and **clean lo
 ---
 
 ⭐ *“Solve one problem every day — mastery is built in silence.”*
+
 
