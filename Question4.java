@@ -12,39 +12,39 @@ import java.util.*;
 
 public class Question4 {
 
-  // WHY: Generate Pascal's Triangle with numRows rows
   // WHAT: Each row starts/ends with 1, middle = sum of two above
+  // WHY: Generate Pascal's Triangle with numRows rows
   // HOW: Build each row using previous row
   public static List<List<Integer>> generate(int numRows) {
     List<List<Integer>> result = new ArrayList<>();
 
-    // WHY: First row is always [1]
     // WHAT: Initialize with base case
+    // WHY: First row is always [1]
     // HOW: Create list with single element 1
     result.add(new ArrayList<>());
     result.get(0).add(1);
 
-    // WHY: Build remaining rows one by one
     // WHAT: Each new row depends on previous row
+    // WHY: Build remaining rows one by one
     // HOW: Loop from row 1 to numRows-1
     for (int row = 1; row < numRows; row++) {
       List<Integer> newRow = new ArrayList<>();
 
-      // WHY: Every row starts with 1
       // WHAT: First element is always 1
+      // WHY: Every row starts with 1
       // HOW: Add 1 at beginning
       newRow.add(1);
 
-      // WHY: Calculate middle elements
       // WHAT: Each element = sum of two elements from previous row
+      // WHY: Calculate middle elements
       // HOW: prevRow[i] + prevRow[i-1]
       List<Integer> prevRow = result.get(row - 1);
       for (int i = 1; i < row; i++) {
         newRow.add(prevRow.get(i) + prevRow.get(i - 1));
       }
 
-      // WHY: Every row ends with 1
       // WHAT: Last element is always 1
+      // WHY: Every row ends with 1
       // HOW: Add 1 at end
       newRow.add(1);
 
